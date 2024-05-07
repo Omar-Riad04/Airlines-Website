@@ -1,0 +1,352 @@
+#body-status{
+    background-image: url("./images/status-flight.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    color: white;
+    opacity: 0.9;
+   }
+   .row1 {
+    display: flex;
+    justify-content: space-between;
+    
+}
+
+#bookingFormBtn {
+    flex: 1; 
+    padding: 12px;
+    font-size: 17px;
+    background: #6c63ff;
+    color: #fff;
+    margin-bottom: 10px;
+    text-decoration: none;
+    text-align: center;
+}
+#bookingFormBtn:hover {
+    background-color: #4c46ba;
+    transition: background-color 0.3s;
+    
+}
+
+#myBookingBtn {
+    flex: 1; 
+    padding: 12px;
+    font-size: 17px;
+    background: #6c63ff;
+    color: #fff;
+    margin-bottom: 10px;
+    text-decoration: none;
+    text-align: center;
+    margin-right: 5px;
+}
+#myBookingBtn:hover {
+    background-color: #4c46ba;    
+    transition: background-color 0.3s;
+
+}
+
+#bookTic{
+    
+    padding: 0px;
+    font-size: 15px;
+    background: black;
+    color: #fff;
+    margin-bottom: 10px;
+    text-decoration: none;
+    text-align: center;
+    margin-right: 5px;
+}
+#flightStatusBtn {
+    flex: 1;
+    padding: 12px;
+    font-size: 17px;
+    background: #6c63ff;
+    color: #fff;
+    margin-bottom: 10px;
+   text-decoration: none;
+   text-align: center;
+}
+#flightStatusBtn:hover {
+    background-color: #4c46ba;    
+    transition: background-color 0.3s;
+
+}
+
+    #form-booking{
+    background-color: #000;
+    height: 600px;
+    width: 800px;
+    margin: auto;
+    padding: 20px;
+    opacity: 0.7;
+    }
+    #form-booking h3{
+     border-bottom: 2px solid #3399ff;
+     width: 210px;
+     padding: 5px;
+    }
+    ::placeholder{
+        color: #fff;   
+    }
+    #h1-booking{
+        display: flex;
+        flex-wrap: wrap;
+        text-align: center;
+        margin-left: 30%;
+
+    }
+    #From{
+        width: 300px;
+        margin: 5px;
+   border-top: none;
+    border-Left: none;
+     border-right: none;
+   outline: none;
+    background: transparent;
+    color: #fff;
+    background-color: black;
+    }
+    #To{
+        width: 300px;
+        margin: 5px;
+   border-top: none;
+    border-Left: none;
+     border-right: none;
+   outline: none;
+    background: transparent;
+    color: #fff;
+    background-color: black;
+    }
+    #input #input-group-preffered-1{
+        width: 300px;
+         margin: 5px;
+    border-top: none;
+     border-Left: none;
+      border-right: none;
+    outline: none;
+     background: transparent;
+     color: #fff;
+     background-color: black;
+    }
+    #input #input-group-preffered-2{
+        width: 300px;
+         margin: 5px;
+    border-top: none;
+     border-Left: none;
+      border-right: none;
+    outline: none;
+     background: transparent;
+     color: #fff;
+     background-color: black;
+    }
+    #input2 #input-group1{
+        width: 195px;
+        margin: 5px;
+        border-top: none;
+     border-Left: none;
+      border-right: none;
+    outline: none;
+     background: transparent;
+     color: #fff;
+    }
+    #input2 #input-group2{
+        width: 195px;
+        margin: 5px;
+        border-top: none;
+     border-Left: none;
+      border-right: none;
+    outline: none;
+     background: transparent;
+     color: #fff;
+    }
+    #input2 #input-group3{
+        width: 195px;
+        margin: 5px;
+        border-top: none;
+     border-Left: none;
+      border-right: none;
+    outline: none;
+     background: transparent;
+     color: #fff;
+    }
+    #input3 #input-group{
+        margin-left: 50px;
+    }
+    #input4 #input-group{
+    width: 300px;
+    margin: 5px;
+    border-top: none;
+     border-Left: none;
+      border-right: none;
+    outline: none;
+     background: transparent;
+     color: #fff;
+    }
+    #input4 #input-group1{
+     width: 615px;
+     margin: 5px;
+     border-top: none;
+     border-Left: none;
+      border-right: none;
+    outline: none;
+     background: transparent;
+     color: #fff;
+    }
+    #bookingSubmit{
+        width: 115px; 
+        height: 38px; 
+        border-radius: 5px;
+        margin-top: 15px;
+        background: #6c63ff; 
+        color: #fff; 
+        border: none;
+    }
+    #bookingSubmit:hover {
+        background-color: #4c46ba;    
+        transition: background-color 0.3s;
+    
+    }
+    #resetbtn{
+        width: 115px; 
+        height: 38px; 
+        border-radius: 5px;
+        margin-top: 15px;
+        background: #566300; 
+        color: #fff; 
+        border: none;
+    }
+    #resetbtn:hover {
+        background-color: #475202;    
+        transition: background-color 0.3s;
+    
+    }
+    .container-pay{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 25px;
+        }
+        .container-pay form{
+          padding: 20px;
+          width: 700px;
+          background-color: #fff;
+          box-shadow: 0 5px 10px black;
+        }
+       .row-pay{
+        display: flex;  
+        flex-wrap: wrap;
+        gap: 15px;
+        }
+       .col-pay{
+          flex: 1 1 250px;
+        }
+      .title-pay{
+          font-size: 23px;
+          color: #333;
+          padding-bottom: 5px;
+          text-transform: uppercase;
+        }
+      .inputbox-pay{
+        margin: 15px 0;
+        }
+      #pay1{
+          margin-bottom: 10px;
+          display: block;
+          color: #000;  
+        }
+        .container-pay form .row-pay .col-pay .inputbox-pay input{
+        width: 100%;
+        border: 1px solid #ccc;
+        padding: 10px 15px;
+        font-size: 15px;
+        text-transform: none;  
+        }
+        .container-pay form .row-pay .col-pay .inputbox-pay img{
+          height: 34px;
+          margin-top: 5px;
+          filter: drop-shadow(0 0 1px #000);
+        }
+        .container-pay form .submit-btn{
+          width: 100%;
+          padding: 12px;
+          font-size: 17px;
+          background: #6c63ff; 
+          color: #fff;
+          margin-top: 5px;
+        }
+        .container-pay form .submit-btn:hover{
+            background-color: #4c46ba;    
+        }
+        input::placeholder{
+            color:gray;
+        }
+        #table1 {
+            width: 100%;
+          }
+        
+          #ta1 {
+            width: 100%;
+            border-collapse: collapse; /* bizbt al 5t 2ly ben al gdwl*/
+          }
+        
+          #tr1 th {
+            background-color: #333;
+            color: white;
+            padding: 10px;
+          }
+        
+          #tr2 th {
+            background-color: #f2f2f2;
+            padding: 10px;
+          }
+        
+          #tr2 th[id^="flightt-num"],
+          #tr2 th[id^="Origin-id"],
+          #tr2 th[id^="Destination-id"],
+          #tr2 th[id^="Departure-time-idd"],
+          #tr2 th[id^="Arrival-time-idd"],
+          #tr2 th[id^="statuss-idd"] {
+            text-align: center;
+          }
+        
+          #tr2 th[id^="flightt-num"],
+          #tr2 th[id^="Origin-id"],
+          #tr2 th[id^="Destination-id"] {
+            width: 100px;
+          }
+        
+          #tr2 th[id^="Departure-time-idd"],
+          #tr2 th[id^="Arrival-time-idd"],
+          #tr2 th[id^="statuss-idd"] {
+            width: 100px;
+          }
+        
+          #tr2 th {
+            border: 1px solid #ccc;
+          }
+        
+          #tr2 th:first-child {
+            border-left: none;
+          }
+        
+          #tr2 th:last-child {
+            border-right: none;
+          }
+        
+          #tr2 th:nth-child(odd) {
+            background-color: #f9f9f9;
+          }
+        
+          #tr2 th:hover {
+            background-color: #f2f2f2;
+          }
+          .fa-plane{
+        font-size: 120px;
+        margin-left: 100px;
+        position: static;
+          }
+        #i1{
+            font-size: 25px;
+            
+        }
