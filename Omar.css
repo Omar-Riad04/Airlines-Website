@@ -1,0 +1,235 @@
+#body-ticket{
+    background-image: url("./images/mariya-oliynyk-RgNwiRFw62A-unsplash.jpg");
+    background-size: cover;
+       background-repeat: no-repeat;
+   background-position: center;
+        color: white;
+   opacity: 0.9;
+       }
+       #book-tickets{
+        background-image: url("./images/pexels-ahmedmuntasir-912050.jpg");
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+       color: white;
+       background-attachment: fixed;
+        opacity: 0.9;
+     }
+     .contact {
+        background-color: #fff; 
+        padding: 20px;
+        width: 80%;
+        margin: 50px auto;
+        color: black;
+        box-shadow: 0 0 10px black;
+    }
+    .contact-div{
+        width:80% ;
+        margin: 50px auto;
+   }
+   .box-contact{
+    display: flex;
+    background-color: #fff; /* amor */
+    border-radius: 10px;
+    box-shadow: 0 0 10px black;
+   }
+   .left-box-contact{
+       flex-basis: 60%; /* bta5od msa7a 60% mn al box */
+       padding: 20px;
+   }
+   .right-box-contact{
+       flex-basis: 40%;
+       padding: 20px;
+       background: #1c00b5;
+       color: #fff;
+   }
+   #h1-contact{
+       color: #6c63ff;
+       margin-bottom: 10px;
+   }
+   #h3-contact{
+       color: #6c63ff;
+       margin-bottom: 30px;
+   }
+   #h3-contact-right{
+    color: #CCCCCC;
+    margin-bottom: 30px;
+}
+   .contact p {
+    font-size: 18px;
+    color: black; 
+    margin-bottom: 20px;
+}
+   .contact-div p{
+       margin-bottom: 40px;
+   }
+   .row-contact{
+       display: flex;
+       justify-content: space-between;
+       margin-bottom: 20px;
+   }
+   #input-contact{
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: none;
+    border-bottom: 2px solid rgb(23, 60, 98);
+   }
+   #input-contact-2{
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: none;
+    border-bottom: 2px solid rgb(23, 60, 98);
+
+   }
+   #input-contact-3{
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: none;
+    border-bottom: 2px solid rgb(23, 60, 98);
+
+   }
+   #input-contact::placeholder{
+    color: gray;
+   }
+   #textarea-contact{
+       width: 100%;
+       border: 1px solid black ;
+       padding: 10px;
+       box-sizing: border-box;
+       margin-bottom: 20px;
+   }
+   #textarea-contact::placeholder{
+    color: gray;
+   }
+   #label-contact{
+    color: black;
+       margin-bottom: 6px;
+       display: block;
+   }
+   #label-contact-right{
+    color: #CCCCCC;
+       margin-bottom: 6px;
+       display: block;
+   }
+   #button-contact{
+    width: 120px; 
+    height: 40px; 
+    border-radius: 20px;
+    margin-top: 20px;
+    background: #6c63ff; 
+    color: #fff; 
+    border: none;
+   }
+   #button-contact:hover {
+    background-color: #4c46ba;    
+}
+#deee{
+    text-align: center;
+
+}
+#taa{
+    background-color: #000;
+    width: 800;
+
+}
+#trr{
+    background-color: gray;
+
+
+}
+#trt{
+background-color: lightgray;
+}
+#trtt{
+    background-color: lightgray;
+    }
+    #trttt1{
+        background-color: lightgray;
+        }
+#tablee{
+    text-align: center;
+    height: 100%;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.flightt {
+    background-color: #fff; 
+    padding: 20px;
+    width: 80%;
+    margin: 50px auto;
+    color: black;
+    box-shadow: 0 0 10px black;
+}
+.flightt-div{
+    width:80% ;
+    margin: 50px auto;
+}
+.box-flightt{
+display: flex;
+background-color: #fff; 
+border-radius: 10px;
+box-shadow: 0 0 10px black;
+}
+.left-box-flightt{
+   flex-basis: 60%; 
+   padding: 20px;
+}
+.right-box-flightt{
+   flex-basis: 40%;
+   padding: 20px;
+   background: #1c00b5;
+   color: #fff;
+}
+
+#h2-flightt{
+   color: #6c63ff;
+   margin-bottom: 20px;
+}
+#h3-flightt-right{
+color: #CCCCCC;
+margin-bottom: 30px;
+}
+
+.row-flightt{
+   display: flex;
+   justify-content: space-between;
+   margin-bottom: 20px;
+} 
+#label-flightt{
+color: black;
+   margin-bottom: 6px;
+   display: block;
+}
+#label-flightt-right{
+color: #CCCCCC;
+   margin-bottom: 6px;
+   display: block;
+}
+#classss {
+margin-right: 4.3em; 
+}
+#ticket-numberrr-labell
+{
+margin-right: 30px; 
+}
+#class-label {
+width: 80px; 
+display: inline-block;
+}
+
+#ticket-number-label {
+width: 120px; 
+display: inline-block;
+}
+
+.label-ticket {
+color: red;
+margin-bottom: 6px;
+display: block;
+}
