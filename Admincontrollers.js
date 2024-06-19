@@ -9,7 +9,6 @@ exports.updateflight = async (req, res) => {
   const { flightnumber, Currentorigin, Currentdestination, Currentdtime, Currentatime, neworigin, newdestination, newdtime, newatime } = req.body;
 
   try {
-      // Find the flight based on current details
       const flight = await addflight.findOne({ 
           addflightnumber: flightnumber,
           addflightorigin: Currentorigin,
@@ -28,10 +27,9 @@ exports.updateflight = async (req, res) => {
       flight.addflightdtime = newdtime;
       flight.addflightatime = newatime;
 
-      // Save the updated flight document
       await flight.save();
 
-      res.render('editFlight'); // Assuming 'editFlight' is your success view
+      res.render('editFlight'); 
   } catch (err) {
       console.error('Error updating flight:', err);
       res.status(500).send('Failed to update flight');
