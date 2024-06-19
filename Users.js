@@ -34,6 +34,23 @@ const PaySchema = new Schema({
 
 
 
+const edituserSchema = new Schema({
+    Currentname: {type: String},
+    Currentemail: {type: String,},
+    Currentpassword: {type: String},
+    newname: {type: String},
+    newemail: {type: String,},
+    newpassword: {type: String}
+});
+
+const deleteuserSchema = new Schema({
+    deletename: {type: String},
+});
+
+
+
+const Myedit=mongoose.model('Myedit',edituserSchema);
+const Mydelete=mongoose.model('Mydelete',deleteuserSchema);
 const Mypay=mongoose.model('Mypay',PaySchema);
 const Mybooking = mongoose.model('Mybooking', FormSchema);
 module.exports = { MyUser, Mybooking ,Mypay,Myadd,Myedit,Mydelete}; 
