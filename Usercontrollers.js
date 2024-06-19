@@ -23,6 +23,22 @@ exports.submitbookingForm = async (req, res) => {
 
 
 
+exports.submitpayform = async (req, res) => {
+    const {name,ElementInternals,address,city,state,zipCode,nameOnCard,cardNumber,expMonth,expYear,cvv  } = req.body;
+
+    try {
+        
+        const newUserpay = new Mypay({  name,ElementInternals,address,city,state,zipCode,nameOnCard,cardNumber,expMonth,expYear,cvv });
+        await newUserpay.save();
+
+        res.render('pay');
+    } catch (err) {
+        console.error('Error saving user:', err);
+        res.status(500).send('Failed to submit form');
+    }
+};
+
+
 
 
 
