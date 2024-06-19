@@ -29,6 +29,22 @@ exports.updateUser = async (req, res) => {
   }
 };
 
-
+exports.deleteUser = async (req, res) => {
+    const { deletename } = req.body;
+  
+    try {
+       
+        const deletedUser = await Myadd.findOneAndDelete({ addname: deletename });
+  
+        if (!deletedUser) {
+            return res.status(404).send('User not found');
+        }
+  
+        res.render('removeuser');  
+    } catch (err) {
+        console.error('Error deleting user:', err);
+        res.status(500).send('Failed to delete user');
+    }
+  };
 
 
