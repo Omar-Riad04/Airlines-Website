@@ -7,20 +7,6 @@ const contactSchema = new Schema({
     email: { type: String },
     message: { type: String }
 });
-
-const edituserSchema = new Schema({
-    Currentname: {type: String},
-    Currentemail: {type: String,},
-    Currentpassword: {type: String},
-    newname: {type: String},
-    newemail: {type: String,},
-    newpassword: {type: String}
-});
-
-const deleteuserSchema = new Schema({
-    deletename: {type: String},
-});
-
 const MyUser = mongoose.model('MyUser', contactSchema);
 const Myedit=mongoose.model('Myedit',edituserSchema);
 const Mydelete=mongoose.model('Mydelete',deleteuserSchema);
