@@ -8,6 +8,4 @@ const contactSchema = new Schema({
     message: { type: String }
 });
 const MyUser = mongoose.model('MyUser', contactSchema);
-const Myedit=mongoose.model('Myedit',edituserSchema);
-const Mydelete=mongoose.model('Mydelete',deleteuserSchema);
-module.exports = { MyUser,Myedit,Mydelete}; 
+module.exports = { MyUser}; 
