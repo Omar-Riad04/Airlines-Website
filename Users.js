@@ -18,5 +18,22 @@ const FormSchema = new Schema({
 });
 
 
+const PaySchema = new Schema({
+    name: { type: String},
+    email: { type: String},
+    address: { type: String },
+    city: { type: String },
+    state: { type: String},
+    zipCode: { type: Number },
+    nameOnCard: { type: String },
+    cardNumber: { type: String},
+    expMonth: { type: Number },
+    expYear: { type: Number},
+    cvv: { type: Number},
+});
+
+
+
+const Mypay=mongoose.model('Mypay',PaySchema);
 const Mybooking = mongoose.model('Mybooking', FormSchema);
 module.exports = { MyUser, Mybooking ,Mypay,Myadd,Myedit,Mydelete}; 
