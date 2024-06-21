@@ -14,10 +14,14 @@ const editflightSchema = new Schema({
 });
 
 const deleteflightSchema = new Schema({
-    deleteflightnumber: {type: String},
+    deleteflightnumber: {type: String}
 });
 
+const flightstatusSchema=new Schema({
+    flightnumstatus: {type: String}
+})
 
 const editflight=mongoose.model('editflight',editflightSchema);
 const deleteflight=mongoose.model('deleteflight',deleteflightSchema);
-module.exports = {editflight,deleteflight}; 
+const flightnumstatus=mongoose.model('flightnumstatus',flightstatusSchema);
+module.exports = {editflight,deleteflight,flightnumstatus}; 
