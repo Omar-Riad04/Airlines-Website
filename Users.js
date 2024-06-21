@@ -1,6 +1,7 @@
 const mongoose = require('mongoose');
 const Schema = mongoose.Schema; 
 
+
 const FormSchema = new Schema({
     from: { type: String },
     to: { type: String },
@@ -16,7 +17,6 @@ const FormSchema = new Schema({
     returnTime: { type: String },
     comments: { type: String }
 });
-
 
 const PaySchema = new Schema({
     name: { type: String},
@@ -49,8 +49,15 @@ const deleteuserSchema = new Schema({
 
 
 
+
+
+
+
+const Mybooking = mongoose.model('Mybooking', FormSchema);
+const Mypay=mongoose.model('Mypay',PaySchema);
 const Myedit=mongoose.model('Myedit',edituserSchema);
 const Mydelete=mongoose.model('Mydelete',deleteuserSchema);
-const Mypay=mongoose.model('Mypay',PaySchema);
-const Mybooking = mongoose.model('Mybooking', FormSchema);
-module.exports = { MyUser, Mybooking ,Mypay,Myadd,Myedit,Mydelete}; 
+
+
+
+module.exports = { MyUser, Mybooking ,Mypay,Myedit,Mydelete}; 
