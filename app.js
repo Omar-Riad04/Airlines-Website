@@ -29,11 +29,18 @@ mongoose.connect(dbURI, { useNewUrlParser: true, useUnifiedTopology: true })
         res.render('index2');
 
 })
-app.get("/pay", (req, res) => {
+app.get("/Routes/pay", (req, res) => {
     res.render('pay');
 
 })
+app.get("/About", (req, res) => {
+    res.render('About');
 
+})
+app.get("/adduser", (req, res) => {
+    res.render('adduser');
+
+})
 
 app.get("/edituser", (req, res) => {
     res.render('edituser');
@@ -43,5 +50,44 @@ app.get("/edituser", (req, res) => {
 app.get("/removeuser", (req, res) => {
     res.render('removeuser');
 
+})
+app.get("/addflight", (req, res) => {
+    res.render('addflight');
+
+})
+
+app.get("/editflight", (req, res) => {
+    res.render('editflight');
+
+})
+
+app.get("/removeflight", (req, res) => {
+    res.render('removeflight');
+
+})
+
+app.get("/status", (req, res) => {
+    res.render('status');
+
+})
+
+app.get("/Flightstatus", (req, res) => {
+    res.render('Flightstatus');
+})
+
+app.get("/myBooking", (req, res) => {
+    res.render('myBooking');
+})
+
+app.get("/sign", (req, res) => {
+    res.render('sign');
+})
+
+app.get("/ticket", (req, res) => {
+    res.render('ticket');
+})
+
+app.get("/planshape", (req, res) => {
+    res.render('planshape');
 })
 
