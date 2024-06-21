@@ -1,13 +1,20 @@
 const express = require('express');
 const app = express();
-const Mysignadd=require('../Models/Users').Mysign;
-const MysignaddIN=require('../Models/Users').MysignIN;
+const bcrypt = require('bcryptjs');
+const { Mysign, MysignIN } = require('../Models/Users'); 
+
 exports.submitadduserform = async (req, res) => {
-    const {UserNamee,Passwordd,Emaill} = req.body;
+    const { UserNamee, Passwordd, Emaill } = req.body;
 
     try {
+        const hashedPassword = await bcrypt.hash(Passwordd, 10); 
 
-        const newsignUser = new Mysignadd({ UserNamee,Passwordd,Emaill });
+        const newsignUser = new Mysign({
+            UserNamee,
+            Passwordd: hashedPassword, 
+            Emaill
+        });
+
         await newsignUser.save();
 
         res.render('sign');
@@ -17,28 +24,23 @@ exports.submitadduserform = async (req, res) => {
     }
 };
 
-
 exports.signInForm = async (req, res) => {
-    const { UserNameeIN,
-    PassworddIN} = req.body;
+    const { UserNameeIN, PassworddIN } = req.body;
 
     try {
-        const mysignin = new MysignaddIN({ UserNameeIN,
-            PassworddIN });
+        const user = await Mysign.findOne({ UserNamee: UserNameeIN });
 
-        const search = {
-            UserNamee: mysignin.UserNameeIN,
-            Passwordd: mysignin.PassworddIN,
-
-        };
-
-        const flightsin = await Mysignadd.find(search);
-
-        if (flightsin.length === 0) {
-            res.send('No User found.');
-        } else {
-            res.render('index2', { flightsin });
+        if (!user) {
+            return res.send('No User found.'); 
         }
+
+        const isMatch = await bcrypt.compare(PassworddIN, user.Passwordd);
+
+        if (!isMatch) {
+            return res.send('Password incorrect.');
+        }
+
+        res.render('index2', { user }); 
     } catch (err) {
         console.error('Error searching User:', err);
         res.status(500).send('Failed to search User');
